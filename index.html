@@ -15,181 +15,308 @@
     }
 
     body {
-      background-color: #19c60a;
+      background-color: #f8f9fd;
       color: #1f1f2e;
       line-height: 1.6;
     }
 
-    header {
+    /* Navbar & Banner */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
       background-image: url('Assets/Hero-bg.png');
       background-size: cover;
       background-position: center;
-      text-align: center;
-      padding: 4rem 1rem;
     }
 
-    .logo {
-      width: 60px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
+    .navbar .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
     }
 
-    h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-    }
-
-    .btn {
-      background-color: #10269f;
+    .navbar .btn {
+      background-color: #3d5afe;
       color: #fff;
       padding: 0.7rem 1.5rem;
       border: none;
-      border-radius: 6px;
-      font-size: 0.9rem;
+      border-radius: 5px;
       cursor: pointer;
-      margin-top: 1.5rem;
+      transition: transform 0.3s ease, background 0.3s ease;
     }
 
-    .section {
-      padding: 4rem 1rem;
+    .navbar .btn:hover {
+      background-color: #002aff;
+      transform: scale(1.05);
+    }
+
+    .banner {
+      text-align: center;
+      padding: 6rem 2rem;
+      background-image: url('Assets/Hero-bg.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 600;
+    }
+
+    .banner .btn {
+      margin-top: 1.5rem;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+    }
+
+    /* Action Section */
+    .action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 4rem 3rem;
+    }
+
+    .action .left {
+      max-width: 45%;
+    }
+
+    .action .right img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .action .btn {
+      margin-top: 1rem;
+    }
+
+    /* Productive Users Section */
+    .productive {
+      background: #eef0ff;
+      padding: 4rem 2rem;
       text-align: center;
     }
 
-    .section-light {
-      background-color: #eef0ff;
+    .productive h3 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
     }
 
-    .mockup {
-      width: 320px;
-      border-radius: 12px;
-      margin-top: 1.5rem;
-    }
-
-    .stats {
+    .productive .stats {
       display: flex;
       justify-content: center;
       gap: 3rem;
-      padding: 2rem 0;
       font-size: 1.3rem;
       font-weight: bold;
-      color: #3d5afe;
     }
 
-    .testimonials {
+    .productive .stats div p {
+      font-size: 0.9rem;
+      font-weight: normal;
+      margin-top: 0.2rem;
+    }
+
+    /* Contact Section */
+    .contact {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .testimonial {
+      padding: 4rem 3rem;
       background: #fff;
-      padding: 1rem;
-      width: 260px;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
     }
 
-    .testimonial img {
-      width: 20px;
-      vertical-align: middle;
+    .contact .left {
+      flex: 1;
+      margin-right: 2rem;
     }
 
-    .form-section {
-      background: #fff;
-      padding: 3rem 1rem;
-      text-align: center;
+    .contact .left h2 {
+      font-size: 2rem;
     }
 
-    form {
-      max-width: 420px;
-      margin: auto;
+    .contact .right {
+      flex: 1;
     }
 
-    input, textarea {
+    form input, form textarea {
       width: 100%;
       padding: 0.8rem;
-      margin: 0.6rem 0;
-      border: 1px solid #ccc;
+      margin-bottom: 1rem;
       border-radius: 6px;
+      border: 1px solid #ccc;
     }
 
+    form .btn {
+      width: 100%;
+      padding: 0.8rem;
+    }
+
+    /* Footer */
     footer {
-      padding: 2rem;
       text-align: center;
       background: #eef0ff;
+      padding: 3rem 2rem;
     }
 
-    footer img.logo {
-      width: 60px;
+    footer h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links {
+      margin-top: 1rem;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Testimonials */
+    .feedback {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .feedback h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feedback .cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .feedback .card {
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 10px;
+      width: 260px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    .feedback img.avatar {
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
+      margin-top: 0.5rem;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .action, .contact {
+        flex-direction: column;
+      }
+      .action .left, .contact .left, .contact .right {
+        max-width: 100%;
+      }
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <img src="Assets/avatar.png" alt="Logo" class="logo" />
-    <h1>Cool Dark UI Template for Webflow Agencies!</h1>
-    <button class="btn">Download Now</button>
-  </header>
+  <div class="navbar">
+    <div class="logo">MyWebsite</div>
+    <button class="btn">Sign Up</button>
+  </div>
 
-  <section class="section">
-    <h2>See it in Action</h2>
-    <p>Explore this UI kit in real time.</p>
-    <button class="btn">Live Preview</button>
-    <img src="Assets/wc-mini.png" alt="Webflow Conf" class="mockup" />
+  <div class="banner">
+    <h1>Cool Dark UI Template for Webflow Agencies!</h1>
+    <button class="btn">Stay Focused</button>
+  </div>
+
+  <section class="action">
+    <div class="left">
+      <h2>See it in Action</h2>
+      <p>Explore this UI kit in real time.</p>
+      <button class="btn">Launch Live Preview</button>
+    </div>
+    <div class="right">
+      <img src="Assets/wc-big.png" alt="Live Preview" />
+    </div>
   </section>
 
-  <section class="section section-light">
+  <section class="productive">
     <h3>Joined Thousands of Productive Users</h3>
     <div class="stats">
-      <div>50K</div>
-      <div>2M+</div>
-      <div>95%</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h3>user's feedback </h3>
-    <div class="testimonials">
-      <div class="testimonial">
-        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐⭐<br />
-        Leading Designers<br />
-        “Best UI Kit ever!”
+      <div>
+        <h4>50K</h4>
+        <p>Downloads</p>
       </div>
-      <div class="testimonial">
-        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐⭐<br />
-        Leading Designers<br />
-        “Boosted our productivity.”
+      <div>
+        <h4>2M+</h4>
+        <p>Views</p>
       </div>
-      <div class="testimonial">
-        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐<br />
-        Leading Designers<br />
-        “Saves hours of work.”
+      <div>
+        <h4>95%</h4>
+        <p>Satisfaction</p>
       </div>
     </div>
   </section>
 
-  <section class="section section-light">
-    <h3>Ready to focus better</h3>
-    <button class="btn">Start Today</button>
-    <img src="Assets/wc-big.png" alt="Webflow Conference" class="mockup" />
+  <section class="feedback">
+    <h3>What our users say</h3>
+    <p>Real feedback from our happy customers</p>
+    <div class="cards">
+      <div class="card">
+        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐⭐
+        <p>"Amazing experience!"</p>
+        <img class="avatar" src="Assets/avatar.png" alt="User" />
+        <p>John Doe - Jan 1, 2024</p>
+      </div>
+      <div class="card">
+        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐⭐
+        <p>"Truly helped our team."</p>
+        <img class="avatar" src="Assets/avatar.png" alt="User" />
+        <p>Jane Smith - Feb 15, 2024</p>
+      </div>
+    </div>
   </section>
 
-  <section class="form-section">
-    <h2>Let’s Get in Touch</h2>
-    <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="text" placeholder="Subject" />
-      <textarea rows="4" placeholder="Message"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <section class="contact">
+    <div class="left">
+      <h2>Let’s Get in Touch</h2>
+    </div>
+    <div class="right">
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" required />
+        <label>Email</label>
+        <input type="email" placeholder="Your Email" required />
+        <label>Message</label>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Get in Touch</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <img src="Assets/avatar.png" alt="Logo" class="logo" />
+    <h3>MyWebsite</h3>
+    <p>UI solutions for modern teams</p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">How it works</a>
+      <a href="#">Services</a>
+    </div>
   </footer>
 </body>
 
