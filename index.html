@@ -1,20 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Dark UI Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cool Dark UI Template</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fd;
+      color: #1f1f2e;
+      line-height: 1.6;
+    }
+
+    header {
+      background-image: url('Assets/Hero-bg.png');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .logo {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .btn {
+      background-color: #3d5afe;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+    }
+
+    .section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .section-light {
+      background-color: #eef0ff;
+    }
+
+    .mockup {
+      width: 320px;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem 0;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #3d5afe;
+    }
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .testimonial {
+      background: #fff;
+      padding: 1rem;
+      width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .testimonial img {
+      width: 20px;
+      vertical-align: middle;
+    }
+
+    .form-section {
+      background: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    form {
+      max-width: 420px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.6rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background: #eef0ff;
+    }
+
+    footer img.logo {
+      width: 60px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
+  <header>
+    <img src="Assets/avatar.png" alt="Logo" class="logo" />
+    <h1>Cool Dark UI Template for Webflow Agencies!</h1>
+    <button class="btn">Download Now</button>
+  </header>
 
-    </header>
-    <Main>
+  <section class="section">
+    <h2>See it in Action</h2>
+    <p>Explore this UI kit in real time.</p>
+    <button class="btn">Live Preview</button>
+    <img src="Assets/wc-mini.png" alt="Webflow Conf" class="mockup" />
+  </section>
 
-    </Main>
-    <footer>
-        
-    </footer>
-    
+  <section class="section section-light">
+    <h3>Joined Thousands of Productive Users</h3>
+    <div class="stats">
+      <div>50K</div>
+      <div>2M+</div>
+      <div>95%</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>What our users say</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐⭐<br />
+        Leading Designers<br />
+        “Best UI Kit ever!”
+      </div>
+      <div class="testimonial">
+        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐⭐<br />
+        Leading Designers<br />
+        “Boosted our productivity.”
+      </div>
+      <div class="testimonial">
+        <img src="Assets/icon-star.png" alt="star" /> ⭐⭐⭐⭐⭐<br />
+        Leading Designers<br />
+        “Saves hours of work.”
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <h3>Ready to focus better</h3>
+    <button class="btn">Start Today</button>
+    <img src="Assets/wc-big.png" alt="Webflow Conference" class="mockup" />
+  </section>
+
+  <section class="form-section">
+    <h2>Let’s Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Subject" />
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <img src="Assets/avatar.png" alt="Logo" class="logo" />
+  </footer>
 </body>
+
 </html>
